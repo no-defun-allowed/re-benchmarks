@@ -1,0 +1,15 @@
+[package]
+name = "rust-re-benchmark"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+regex = "1.5.4"
+hyperscan = "0.2"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "regex"
+harness = false

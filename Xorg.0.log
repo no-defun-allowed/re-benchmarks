@@ -1,0 +1,580 @@
+[    17.283] 
+X.Org X Server 1.21.1.2
+X Protocol Version 11, Revision 0
+[    17.283] Current Operating System: Linux ONE-MORE-RE-NIGHTMARE 5.15.11-arch2-1 #1 SMP PREEMPT Wed, 22 Dec 2021 09:23:54 +0000 x86_64
+[    17.283] Kernel command line: initrd=\initramfs-linux.img root=/dev/nvme0n1p2 rw
+[    17.283]  
+[    17.283] Current version of pixman: 0.40.0
+[    17.283] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    17.283] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    17.283] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  7 17:19:56 2022
+[    17.292] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    17.295] (==) No Layout section.  Using the first Screen section.
+[    17.295] (==) No screen section available. Using defaults.
+[    17.295] (**) |-->Screen "Default Screen Section" (0)
+[    17.295] (**) |   |-->Monitor "<default monitor>"
+[    17.295] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    17.295] (==) Automatically adding devices
+[    17.295] (==) Automatically enabling devices
+[    17.295] (==) Automatically adding GPU devices
+[    17.295] (==) Automatically binding GPU devices
+[    17.295] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    17.296] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    17.296] 	Entry deleted from font path.
+[    17.298] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[    17.298] 	Entry deleted from font path.
+[    17.298] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    17.298] 	Entry deleted from font path.
+[    17.302] (==) FontPath set to:
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[    17.302] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    17.302] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    17.302] (II) Module ABI versions:
+[    17.302] 	X.Org ANSI C Emulation: 0.4
+[    17.302] 	X.Org Video Driver: 25.2
+[    17.302] 	X.Org XInput driver : 24.4
+[    17.302] 	X.Org Server Extension : 10.0
+[    17.303] (++) using VT number 7
+
+[    17.303] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    17.303] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    17.303] (II) Platform probe for /sys/devices/pci0000:00/0000:00:03.1/0000:25:00.0/drm/card0
+[    17.323] (--) PCI:*(37@0:0:0) 1002:67df:1043:0519 rev 231, Mem @ 0xe0000000/268435456, 0xf0000000/2097152, 0xfe800000/262144, I/O @ 0x0000e000/256, BIOS @ 0x????????/131072
+[    17.323] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[    17.323] (II) LoadModule: "glx"
+[    17.339] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    17.374] (II) Module glx: vendor="X.Org Foundation"
+[    17.374] 	compiled for 1.21.1.2, module version = 1.0.0
+[    17.374] 	ABI class: X.Org Server Extension, version 10.0
+[    17.374] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[    17.374] 	loading driver: amdgpu
+[    17.374] (==) Matched amdgpu as autoconfigured driver 0
+[    17.374] (==) Matched ati as autoconfigured driver 1
+[    17.374] (==) Matched modesetting as autoconfigured driver 2
+[    17.374] (==) Matched fbdev as autoconfigured driver 3
+[    17.374] (==) Matched vesa as autoconfigured driver 4
+[    17.374] (==) Assigned the driver to the xf86ConfigLayout
+[    17.374] (II) LoadModule: "amdgpu"
+[    17.374] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[    17.393] (II) Module amdgpu: vendor="X.Org Foundation"
+[    17.393] 	compiled for 1.21.1, module version = 21.0.0
+[    17.393] 	Module class: X.Org Video Driver
+[    17.393] 	ABI class: X.Org Video Driver, version 25.2
+[    17.393] (II) LoadModule: "ati"
+[    17.393] (WW) Warning, couldn't open module ati
+[    17.393] (EE) Failed to load module "ati" (module does not exist, 0)
+[    17.393] (II) LoadModule: "modesetting"
+[    17.393] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    17.393] (II) Module modesetting: vendor="X.Org Foundation"
+[    17.393] 	compiled for 1.21.1.2, module version = 1.21.1
+[    17.393] 	Module class: X.Org Video Driver
+[    17.393] 	ABI class: X.Org Video Driver, version 25.2
+[    17.394] (II) LoadModule: "fbdev"
+[    17.394] (WW) Warning, couldn't open module fbdev
+[    17.394] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    17.394] (II) LoadModule: "vesa"
+[    17.394] (WW) Warning, couldn't open module vesa
+[    17.394] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    17.394] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[    17.394] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    17.412] (WW) Falling back to old probe method for modesetting
+[    17.414] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    17.414] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[    17.414] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[    17.414] (==) AMDGPU(0): Default visual is TrueColor
+[    17.414] (==) AMDGPU(0): RGB weight 888
+[    17.414] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[    17.414] (--) AMDGPU(0): Chipset: "AMD Radeon RX 580 Series" (ChipID = 0x67df)
+[    17.414] (II) Loading sub module "fb"
+[    17.414] (II) LoadModule: "fb"
+[    17.414] (II) Module "fb" already built-in
+[    17.414] (II) Loading sub module "dri2"
+[    17.414] (II) LoadModule: "dri2"
+[    17.414] (II) Module "dri2" already built-in
+[    17.899] (II) Loading sub module "glamoregl"
+[    17.899] (II) LoadModule: "glamoregl"
+[    17.899] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[    17.917] (II) Module glamoregl: vendor="X.Org Foundation"
+[    17.917] 	compiled for 1.21.1.2, module version = 1.0.1
+[    17.917] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    17.966] (II) AMDGPU(0): glamor X acceleration enabled on AMD Radeon RX 580 Series (POLARIS10, DRM 3.42.0, 5.15.11-arch2-1, LLVM 13.0.0)
+[    17.966] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[    17.966] (==) AMDGPU(0): TearFree property default: auto
+[    17.966] (==) AMDGPU(0): VariableRefresh: disabled
+[    17.966] (II) AMDGPU(0): KMS Pageflipping: enabled
+[    17.966] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[    17.966] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[    17.966] (II) AMDGPU(0): Output HDMI-A-0 has no monitor section
+[    17.968] (II) AMDGPU(0): Output HDMI-A-1 has no monitor section
+[    17.968] (II) AMDGPU(0): Output DVI-D-0 has no monitor section
+[    17.986] (II) AMDGPU(0): EDID for output DisplayPort-0
+[    17.986] (II) AMDGPU(0): EDID for output DisplayPort-1
+[    17.986] (II) AMDGPU(0): EDID for output HDMI-A-0
+[    17.988] (II) AMDGPU(0): EDID for output HDMI-A-1
+[    17.988] (II) AMDGPU(0): Manufacturer: ACI  Model: 22fa  Serial#: 16843009
+[    17.988] (II) AMDGPU(0): Year: 2011  Week: 14
+[    17.988] (II) AMDGPU(0): EDID Version: 1.3
+[    17.988] (II) AMDGPU(0): Digital Display Input
+[    17.988] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 48  vert.: 27
+[    17.988] (II) AMDGPU(0): Gamma: 2.20
+[    17.988] (II) AMDGPU(0): DPMS capabilities: StandBy Suspend Off
+[    17.988] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    17.988] (II) AMDGPU(0): Default color space is primary color space
+[    17.988] (II) AMDGPU(0): First detailed timing is preferred mode
+[    17.988] (II) AMDGPU(0): redX: 0.640 redY: 0.340   greenX: 0.290 greenY: 0.609
+[    17.988] (II) AMDGPU(0): blueX: 0.140 blueY: 0.069   whiteX: 0.313 whiteY: 0.329
+[    17.988] (II) AMDGPU(0): Supported established timings:
+[    17.988] (II) AMDGPU(0): 720x400@70Hz
+[    17.988] (II) AMDGPU(0): 640x480@60Hz
+[    17.988] (II) AMDGPU(0): 640x480@67Hz
+[    17.988] (II) AMDGPU(0): 640x480@72Hz
+[    17.988] (II) AMDGPU(0): 640x480@75Hz
+[    17.988] (II) AMDGPU(0): 800x600@56Hz
+[    17.988] (II) AMDGPU(0): 800x600@60Hz
+[    17.988] (II) AMDGPU(0): 800x600@72Hz
+[    17.988] (II) AMDGPU(0): 800x600@75Hz
+[    17.988] (II) AMDGPU(0): 832x624@75Hz
+[    17.988] (II) AMDGPU(0): 1024x768@60Hz
+[    17.988] (II) AMDGPU(0): 1024x768@70Hz
+[    17.988] (II) AMDGPU(0): 1024x768@75Hz
+[    17.988] (II) AMDGPU(0): 1280x1024@75Hz
+[    17.988] (II) AMDGPU(0): Manufacturer's mask: 0
+[    17.988] (II) AMDGPU(0): Supported standard timings:
+[    17.988] (II) AMDGPU(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[    17.988] (II) AMDGPU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[    17.988] (II) AMDGPU(0): #2: hsize: 1280  vsize 960  refresh: 60  vid: 16513
+[    17.988] (II) AMDGPU(0): #3: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[    17.988] (II) AMDGPU(0): #4: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[    17.988] (II) AMDGPU(0): #5: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+[    17.988] (II) AMDGPU(0): #6: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[    17.988] (II) AMDGPU(0): Supported detailed timing:
+[    17.988] (II) AMDGPU(0): clock: 148.5 MHz   Image Size:  531 x 299 mm
+[    17.988] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    17.988] (II) AMDGPU(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[    17.988] (II) AMDGPU(0): Ranges: V min: 50 V max: 76 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[    17.988] (II) AMDGPU(0): Monitor name: VE228
+[    17.988] (II) AMDGPU(0): Serial No: B3LMQS064113
+[    17.988] (II) AMDGPU(0): Supported detailed timing:
+[    17.988] (II) AMDGPU(0): clock: 138.5 MHz   Image Size:  531 x 299 mm
+[    17.988] (II) AMDGPU(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[    17.988] (II) AMDGPU(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1110 v_border: 0
+[    17.989] (II) AMDGPU(0): Supported detailed timing:
+[    17.989] (II) AMDGPU(0): clock: 85.5 MHz   Image Size:  531 x 299 mm
+[    17.989] (II) AMDGPU(0): h_active: 1366  h_sync: 1436  h_sync_end 1579 h_blank_end 1792 h_border: 0
+[    17.989] (II) AMDGPU(0): v_active: 768  v_sync: 771  v_sync_end 774 v_blanking: 798 v_border: 0
+[    17.989] (II) AMDGPU(0): Supported detailed timing:
+[    17.989] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  531 x 299 mm
+[    17.989] (II) AMDGPU(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[    17.989] (II) AMDGPU(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[    17.989] (II) AMDGPU(0): Supported detailed timing:
+[    17.989] (II) AMDGPU(0): clock: 27.0 MHz   Image Size:  531 x 299 mm
+[    17.989] (II) AMDGPU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[    17.989] (II) AMDGPU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[    17.989] (II) AMDGPU(0): Supported detailed timing:
+[    17.989] (II) AMDGPU(0): clock: 74.2 MHz   Image Size:  531 x 299 mm
+[    17.989] (II) AMDGPU(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[    17.989] (II) AMDGPU(0): v_active: 540  v_sync: 542  v_sync_end 547 v_blanking: 562 v_border: 0
+[    17.989] (II) AMDGPU(0): Number of EDID sections to follow: 1
+[    17.989] (II) AMDGPU(0): EDID (in hex):
+[    17.989] (II) AMDGPU(0): 	00ffffffffffff000469fa2201010101
+[    17.989] (II) AMDGPU(0): 	0e15010380301b78eec4f5a3574a9c23
+[    17.989] (II) AMDGPU(0): 	115054bfef00714f818081409500a940
+[    17.989] (II) AMDGPU(0): 	b300d1c00101023a801871382d40582c
+[    17.989] (II) AMDGPU(0): 	4500132b2100001e000000fd00324c1e
+[    17.989] (II) AMDGPU(0): 	5311000a202020202020000000fc0056
+[    17.989] (II) AMDGPU(0): 	453232380a20202020202020000000ff
+[    17.989] (II) AMDGPU(0): 	0042334c4d51533036343131330a01bd
+[    17.989] (II) AMDGPU(0): 	02031ef14b900504030201111213141f
+[    17.989] (II) AMDGPU(0): 	230907078301000065030c0010001a36
+[    17.989] (II) AMDGPU(0): 	80a070381e4030203500132b2100001a
+[    17.989] (II) AMDGPU(0): 	662156aa51001e30468f3300132b2100
+[    17.989] (II) AMDGPU(0): 	001e011d007251d01e206e285500132b
+[    17.989] (II) AMDGPU(0): 	2100001e8c0ad08a20e02d10103e9600
+[    17.989] (II) AMDGPU(0): 	132b21000018011d8018711c1620582c
+[    17.989] (II) AMDGPU(0): 	2500132b2100009f0000000000000039
+[    17.989] (II) AMDGPU(0): Printing probed modes for output HDMI-A-1
+[    17.989] (II) AMDGPU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[    17.989] (II) AMDGPU(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1920x1080"x60.0  138.50  1920 1968 2000 2080  1080 1083 1088 1110 +hsync -vsync (66.6 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1366x768"x59.8   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x800"x60.0  148.50  1280 2008 2052 2200  800 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[    17.989] (II) AMDGPU(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[    17.990] (II) AMDGPU(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[    17.990] (II) AMDGPU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    17.990] (II) AMDGPU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    17.990] (II) AMDGPU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    17.990] (II) AMDGPU(0): EDID for output DVI-D-0
+[    17.990] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[    17.990] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[    17.990] (II) AMDGPU(0): Output HDMI-A-0 disconnected
+[    17.990] (II) AMDGPU(0): Output HDMI-A-1 connected
+[    17.990] (II) AMDGPU(0): Output DVI-D-0 disconnected
+[    17.990] (II) AMDGPU(0): Using exact sizes for initial modes
+[    17.990] (II) AMDGPU(0): Output HDMI-A-1 using initial mode 1920x1080 +0+0
+[    17.990] (II) AMDGPU(0): mem size init: gart size :1ff86b000 vram size: s:1feae7000 visible:f5e7000
+[    17.990] (==) AMDGPU(0): DPI set to (96, 96)
+[    17.990] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    17.990] (II) Loading sub module "ramdac"
+[    17.990] (II) LoadModule: "ramdac"
+[    17.990] (II) Module "ramdac" already built-in
+[    17.990] (II) UnloadModule: "modesetting"
+[    17.990] (II) Unloading modesetting
+[    17.990] (II) AMDGPU(0): [DRI2] Setup complete
+[    17.990] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    17.990] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    17.992] (II) AMDGPU(0): Front buffer pitch: 8192 bytes
+[    18.001] (II) AMDGPU(0): SYNC extension fences enabled
+[    18.001] (II) AMDGPU(0): Present extension enabled
+[    18.001] (==) AMDGPU(0): DRI3 enabled
+[    18.001] (==) AMDGPU(0): Backing store enabled
+[    18.001] (II) AMDGPU(0): Direct rendering enabled
+[    18.071] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    18.071] (II) AMDGPU(0): Acceleration enabled
+[    18.071] (==) AMDGPU(0): DPMS enabled
+[    18.071] (==) AMDGPU(0): Silken mouse enabled
+[    18.071] (II) AMDGPU(0): Set up textured video (glamor)
+[    18.087] (II) Initializing extension Generic Event Extension
+[    18.087] (II) Initializing extension SHAPE
+[    18.087] (II) Initializing extension MIT-SHM
+[    18.087] (II) Initializing extension XInputExtension
+[    18.087] (II) Initializing extension XTEST
+[    18.087] (II) Initializing extension BIG-REQUESTS
+[    18.087] (II) Initializing extension SYNC
+[    18.087] (II) Initializing extension XKEYBOARD
+[    18.087] (II) Initializing extension XC-MISC
+[    18.087] (II) Initializing extension SECURITY
+[    18.087] (II) Initializing extension XFIXES
+[    18.087] (II) Initializing extension RENDER
+[    18.087] (II) Initializing extension RANDR
+[    18.088] (II) Initializing extension COMPOSITE
+[    18.088] (II) Initializing extension DAMAGE
+[    18.088] (II) Initializing extension MIT-SCREEN-SAVER
+[    18.088] (II) Initializing extension DOUBLE-BUFFER
+[    18.088] (II) Initializing extension RECORD
+[    18.088] (II) Initializing extension DPMS
+[    18.088] (II) Initializing extension Present
+[    18.088] (II) Initializing extension DRI3
+[    18.088] (II) Initializing extension X-Resource
+[    18.088] (II) Initializing extension XVideo
+[    18.088] (II) Initializing extension XVideo-MotionCompensation
+[    18.088] (II) Initializing extension GLX
+[    18.094] (II) AIGLX: Loaded and initialized radeonsi
+[    18.094] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    18.094] (II) Initializing extension XFree86-VidModeExtension
+[    18.094] (II) Initializing extension XFree86-DGA
+[    18.094] (II) Initializing extension XFree86-DRI
+[    18.094] (II) Initializing extension DRI2
+[    18.095] (II) AMDGPU(0): Setting screen physical size to 508 x 285
+[    18.448] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    18.448] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.448] (II) LoadModule: "libinput"
+[    18.448] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    18.451] (II) Module libinput: vendor="X.Org Foundation"
+[    18.451] 	compiled for 1.21.1, module version = 1.2.0
+[    18.451] 	Module class: X.Org XInput Driver
+[    18.451] 	ABI class: X.Org XInput driver, version 24.4
+[    18.451] (II) Using input driver 'libinput' for 'Power Button'
+[    18.451] (**) Power Button: always reports core events
+[    18.451] (**) Option "Device" "/dev/input/event1"
+[    18.452] (**) Option "_source" "server/udev"
+[    18.459] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.459] (II) event1  - Power Button: device is a keyboard
+[    18.459] (II) event1  - Power Button: device removed
+[    18.480] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    18.480] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    18.481] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.481] (II) event1  - Power Button: device is a keyboard
+[    18.482] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    18.482] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.482] (II) Using input driver 'libinput' for 'Power Button'
+[    18.482] (**) Power Button: always reports core events
+[    18.482] (**) Option "Device" "/dev/input/event0"
+[    18.482] (**) Option "_source" "server/udev"
+[    18.483] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    18.483] (II) event0  - Power Button: device is a keyboard
+[    18.484] (II) event0  - Power Button: device removed
+[    18.520] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    18.520] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    18.521] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    18.521] (II) event0  - Power Button: device is a keyboard
+[    18.523] (II) config/udev: Adding input device YICHIP Wireless Device Mouse (/dev/input/event6)
+[    18.523] (**) YICHIP Wireless Device Mouse: Applying InputClass "libinput pointer catchall"
+[    18.523] (II) Using input driver 'libinput' for 'YICHIP Wireless Device Mouse'
+[    18.523] (**) YICHIP Wireless Device Mouse: always reports core events
+[    18.523] (**) Option "Device" "/dev/input/event6"
+[    18.523] (**) Option "_source" "server/udev"
+[    18.525] (II) event6  - YICHIP Wireless Device Mouse: is tagged by udev as: Mouse
+[    18.526] (II) event6  - YICHIP Wireless Device Mouse: device is a pointer
+[    18.526] (II) event6  - YICHIP Wireless Device Mouse: device removed
+[    18.586] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:03:00.0/usb1/1-7/1-7:1.1/0003:3151:1002.0005/input/input6/event6"
+[    18.586] (II) XINPUT: Adding extended input device "YICHIP Wireless Device Mouse" (type: MOUSE, id 8)
+[    18.587] (**) Option "AccelerationScheme" "none"
+[    18.587] (**) YICHIP Wireless Device Mouse: (accel) selected scheme none/0
+[    18.587] (**) YICHIP Wireless Device Mouse: (accel) acceleration factor: 2.000
+[    18.587] (**) YICHIP Wireless Device Mouse: (accel) acceleration threshold: 4
+[    18.589] (II) event6  - YICHIP Wireless Device Mouse: is tagged by udev as: Mouse
+[    18.589] (II) event6  - YICHIP Wireless Device Mouse: device is a pointer
+[    18.591] (II) config/udev: Adding input device YICHIP Wireless Device Mouse (/dev/input/mouse0)
+[    18.591] (II) No input driver specified, ignoring this device.
+[    18.591] (II) This device may have been added with another device file.
+[    18.592] (II) config/udev: Adding input device YICHIP Wireless Device System Control (/dev/input/event7)
+[    18.592] (**) YICHIP Wireless Device System Control: Applying InputClass "libinput keyboard catchall"
+[    18.592] (II) Using input driver 'libinput' for 'YICHIP Wireless Device System Control'
+[    18.592] (**) YICHIP Wireless Device System Control: always reports core events
+[    18.592] (**) Option "Device" "/dev/input/event7"
+[    18.592] (**) Option "_source" "server/udev"
+[    18.594] (II) event7  - YICHIP Wireless Device System Control: is tagged by udev as: Keyboard
+[    18.594] (II) event7  - YICHIP Wireless Device System Control: device is a keyboard
+[    18.595] (II) event7  - YICHIP Wireless Device System Control: device removed
+[    18.627] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:03:00.0/usb1/1-7/1-7:1.1/0003:3151:1002.0005/input/input7/event7"
+[    18.627] (II) XINPUT: Adding extended input device "YICHIP Wireless Device System Control" (type: KEYBOARD, id 9)
+[    18.629] (II) event7  - YICHIP Wireless Device System Control: is tagged by udev as: Keyboard
+[    18.630] (II) event7  - YICHIP Wireless Device System Control: device is a keyboard
+[    18.631] (II) config/udev: Adding input device YICHIP Wireless Device Consumer Control (/dev/input/event8)
+[    18.631] (**) YICHIP Wireless Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    18.631] (II) Using input driver 'libinput' for 'YICHIP Wireless Device Consumer Control'
+[    18.631] (**) YICHIP Wireless Device Consumer Control: always reports core events
+[    18.631] (**) Option "Device" "/dev/input/event8"
+[    18.631] (**) Option "_source" "server/udev"
+[    18.634] (II) event8  - YICHIP Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[    18.634] (II) event8  - YICHIP Wireless Device Consumer Control: device is a keyboard
+[    18.634] (II) event8  - YICHIP Wireless Device Consumer Control: device removed
+[    18.666] (II) libinput: YICHIP Wireless Device Consumer Control: needs a virtual subdevice
+[    18.666] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:03:00.0/usb1/1-7/1-7:1.1/0003:3151:1002.0005/input/input8/event8"
+[    18.667] (II) XINPUT: Adding extended input device "YICHIP Wireless Device Consumer Control" (type: MOUSE, id 10)
+[    18.667] (**) Option "AccelerationScheme" "none"
+[    18.667] (**) YICHIP Wireless Device Consumer Control: (accel) selected scheme none/0
+[    18.667] (**) YICHIP Wireless Device Consumer Control: (accel) acceleration factor: 2.000
+[    18.667] (**) YICHIP Wireless Device Consumer Control: (accel) acceleration threshold: 4
+[    18.669] (II) event8  - YICHIP Wireless Device Consumer Control: is tagged by udev as: Keyboard
+[    18.669] (II) event8  - YICHIP Wireless Device Consumer Control: device is a keyboard
+[    18.671] (II) config/udev: Adding input device UVC Camera (046d:0802) (/dev/input/event24)
+[    18.671] (**) UVC Camera (046d:0802): Applying InputClass "libinput keyboard catchall"
+[    18.671] (II) Using input driver 'libinput' for 'UVC Camera (046d:0802)'
+[    18.671] (**) UVC Camera (046d:0802): always reports core events
+[    18.671] (**) Option "Device" "/dev/input/event24"
+[    18.671] (**) Option "_source" "server/udev"
+[    18.673] (II) event24 - UVC Camera (046d:0802): is tagged by udev as: Keyboard
+[    18.673] (II) event24 - UVC Camera (046d:0802): device is a keyboard
+[    18.673] (II) event24 - UVC Camera (046d:0802): device removed
+[    18.733] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:03:00.0/usb1/1-8/1-8:1.0/input/input25/event24"
+[    18.733] (II) XINPUT: Adding extended input device "UVC Camera (046d:0802)" (type: KEYBOARD, id 11)
+[    18.735] (II) event24 - UVC Camera (046d:0802): is tagged by udev as: Keyboard
+[    18.735] (II) event24 - UVC Camera (046d:0802): device is a keyboard
+[    18.737] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event10)
+[    18.737] (II) No input driver specified, ignoring this device.
+[    18.737] (II) This device may have been added with another device file.
+[    18.738] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event11)
+[    18.738] (II) No input driver specified, ignoring this device.
+[    18.738] (II) This device may have been added with another device file.
+[    18.738] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event12)
+[    18.738] (II) No input driver specified, ignoring this device.
+[    18.738] (II) This device may have been added with another device file.
+[    18.739] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event13)
+[    18.739] (II) No input driver specified, ignoring this device.
+[    18.739] (II) This device may have been added with another device file.
+[    18.740] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event14)
+[    18.740] (II) No input driver specified, ignoring this device.
+[    18.740] (II) This device may have been added with another device file.
+[    18.740] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=11 (/dev/input/event15)
+[    18.740] (II) No input driver specified, ignoring this device.
+[    18.740] (II) This device may have been added with another device file.
+[    18.741] (II) config/udev: Adding input device Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB (/dev/input/event2)
+[    18.741] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: Applying InputClass "libinput keyboard catchall"
+[    18.741] (II) Using input driver 'libinput' for 'Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB'
+[    18.741] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: always reports core events
+[    18.741] (**) Option "Device" "/dev/input/event2"
+[    18.741] (**) Option "_source" "server/udev"
+[    18.744] (II) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: is tagged by udev as: Keyboard
+[    18.744] (II) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: device is a keyboard
+[    18.744] (II) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: device removed
+[    18.786] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:26:00.3/usb3/3-1/3-1:1.0/0003:2516:003B.0001/input/input2/event2"
+[    18.786] (II) XINPUT: Adding extended input device "Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB" (type: KEYBOARD, id 12)
+[    18.789] (II) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: is tagged by udev as: Keyboard
+[    18.789] (II) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: device is a keyboard
+[    18.791] (II) config/udev: Adding input device Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control (/dev/input/event3)
+[    18.791] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: Applying InputClass "libinput keyboard catchall"
+[    18.791] (II) Using input driver 'libinput' for 'Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control'
+[    18.791] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: always reports core events
+[    18.791] (**) Option "Device" "/dev/input/event3"
+[    18.791] (**) Option "_source" "server/udev"
+[    18.793] (II) event3  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: is tagged by udev as: Keyboard
+[    18.793] (II) event3  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: device is a keyboard
+[    18.794] (II) event3  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: device removed
+[    18.827] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:26:00.3/usb3/3-1/3-1:1.2/0003:2516:003B.0003/input/input3/event3"
+[    18.827] (II) XINPUT: Adding extended input device "Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control" (type: KEYBOARD, id 13)
+[    18.829] (II) event3  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: is tagged by udev as: Keyboard
+[    18.830] (II) event3  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB System Control: device is a keyboard
+[    18.831] (II) config/udev: Adding input device Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control (/dev/input/event4)
+[    18.831] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    18.831] (II) Using input driver 'libinput' for 'Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control'
+[    18.831] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: always reports core events
+[    18.831] (**) Option "Device" "/dev/input/event4"
+[    18.831] (**) Option "_source" "server/udev"
+[    18.833] (II) event4  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: is tagged by udev as: Keyboard
+[    18.834] (II) event4  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: device is a keyboard
+[    18.834] (II) event4  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: device removed
+[    18.880] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:26:00.3/usb3/3-1/3-1:1.2/0003:2516:003B.0003/input/input4/event4"
+[    18.880] (II) XINPUT: Adding extended input device "Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control" (type: KEYBOARD, id 14)
+[    18.882] (II) event4  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: is tagged by udev as: Keyboard
+[    18.882] (II) event4  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Consumer Control: device is a keyboard
+[    18.884] (II) config/udev: Adding input device Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard (/dev/input/event5)
+[    18.884] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    18.884] (II) Using input driver 'libinput' for 'Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard'
+[    18.884] (**) Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: always reports core events
+[    18.884] (**) Option "Device" "/dev/input/event5"
+[    18.884] (**) Option "_source" "server/udev"
+[    18.886] (II) event5  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: is tagged by udev as: Keyboard
+[    18.887] (II) event5  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: device is a keyboard
+[    18.887] (II) event5  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: device removed
+[    18.906] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:26:00.3/usb3/3-1/3-1:1.2/0003:2516:003B.0003/input/input5/event5"
+[    18.907] (II) XINPUT: Adding extended input device "Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard" (type: KEYBOARD, id 15)
+[    18.909] (II) event5  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: is tagged by udev as: Keyboard
+[    18.909] (II) event5  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB Keyboard: device is a keyboard
+[    18.911] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event16)
+[    18.911] (II) No input driver specified, ignoring this device.
+[    18.911] (II) This device may have been added with another device file.
+[    18.911] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event17)
+[    18.911] (II) No input driver specified, ignoring this device.
+[    18.911] (II) This device may have been added with another device file.
+[    18.912] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event18)
+[    18.912] (II) No input driver specified, ignoring this device.
+[    18.912] (II) This device may have been added with another device file.
+[    18.912] (II) config/udev: Adding input device HD-Audio Generic Line Out Front (/dev/input/event19)
+[    18.912] (II) No input driver specified, ignoring this device.
+[    18.912] (II) This device may have been added with another device file.
+[    18.913] (II) config/udev: Adding input device HD-Audio Generic Line Out Surround (/dev/input/event20)
+[    18.913] (II) No input driver specified, ignoring this device.
+[    18.913] (II) This device may have been added with another device file.
+[    18.913] (II) config/udev: Adding input device HD-Audio Generic Line Out CLFE (/dev/input/event21)
+[    18.913] (II) No input driver specified, ignoring this device.
+[    18.913] (II) This device may have been added with another device file.
+[    18.914] (II) config/udev: Adding input device HD-Audio Generic Line Out Side (/dev/input/event22)
+[    18.914] (II) No input driver specified, ignoring this device.
+[    18.914] (II) This device may have been added with another device file.
+[    18.914] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event23)
+[    18.915] (II) No input driver specified, ignoring this device.
+[    18.915] (II) This device may have been added with another device file.
+[    18.915] (II) config/udev: Adding input device PC Speaker (/dev/input/event9)
+[    18.915] (II) No input driver specified, ignoring this device.
+[    18.915] (II) This device may have been added with another device file.
+[    18.924] (**) YICHIP Wireless Device Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    18.924] (II) Using input driver 'libinput' for 'YICHIP Wireless Device Consumer Control'
+[    18.924] (**) YICHIP Wireless Device Consumer Control: always reports core events
+[    18.924] (**) Option "Device" "/dev/input/event8"
+[    18.924] (**) Option "_source" "_driver/libinput"
+[    18.924] (II) libinput: YICHIP Wireless Device Consumer Control: is a virtual subdevice
+[    18.924] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:01.3/0000:03:00.0/usb1/1-7/1-7:1.1/0003:3151:1002.0005/input/input8/event8"
+[    18.924] (II) XINPUT: Adding extended input device "YICHIP Wireless Device Consumer Control" (type: KEYBOARD, id 16)
+[   258.577] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 14ms, your system is too slow
+[   438.387] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 24ms, your system is too slow
+[  1773.977] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 31ms, your system is too slow
+[  2829.434] (II) AMDGPU(0): EDID vendor "ACI", prod id 8954
+[  2829.434] (II) AMDGPU(0): Using EDID range info for horizontal sync
+[  2829.434] (II) AMDGPU(0): Using EDID range info for vertical refresh
+[  2829.434] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[  2829.434] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  2829.434] (II) AMDGPU(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1110 +hsync -vsync (66.6 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1366x768"x0.0   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "640x480"x0.0   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1024x768"x0.0   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "832x624"x0.0   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "800x600"x0.0   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1280x960"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[  2829.434] (II) AMDGPU(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  2871.623] (II) AMDGPU(0): EDID vendor "ACI", prod id 8954
+[  2871.623] (II) AMDGPU(0): Using hsync ranges from config file
+[  2871.623] (II) AMDGPU(0): Using vrefresh ranges from config file
+[  2871.623] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[  2871.623] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  2871.623] (II) AMDGPU(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1110 +hsync -vsync (66.6 kHz e)
+[  2871.623] (II) AMDGPU(0): Modeline "1366x768"x0.0   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "640x480"x0.0   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "640x480"x0.0   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1024x768"x0.0   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "832x624"x0.0   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "800x600"x0.0   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1280x960"x0.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz e)
+[  2871.624] (II) AMDGPU(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  2900.555] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 28ms, your system is too slow
+[  3600.910] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 27ms, your system is too slow
+[  3600.910] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[  3868.268] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 15ms, your system is too slow
+[  3911.758] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 25ms, your system is too slow
+[  3922.557] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 14ms, your system is too slow
+[  3947.249] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 16ms, your system is too slow
+[  3957.962] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: client bug: event processing lagging behind by 32ms, your system is too slow
+[  3957.962] (EE) event2  - Cooler Master Technology Inc. MASTERKEYS PRO L with intelligent RGB: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
